@@ -1,23 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home Work 9</title>
+    <style>
+      .button {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        margin: 4px 2px; 
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
+  
+      .button:hover {
+        background-color:#4CAF50; 
+      }
+  
+      .button:active {
+        background-color: #3e8e41; 
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+  
+      .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        
+      }
+    </style>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <div class="center">
+      <a href="./01-gallery.html" class="button">Gallery</a>
+      <a href="./02-form.html" class="button">Form</a>
+    </div>
   </body>
 </html>
+
